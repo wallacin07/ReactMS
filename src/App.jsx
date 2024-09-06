@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react'
-import { CardAPI } from './components/Card'
+import { CardAPI } from './components/CardAPI'
 import produtos from './constants/produtos.json'
 import { api } from "./api/rmApi"
 import style from './App.module.css'
