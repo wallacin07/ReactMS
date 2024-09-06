@@ -3,6 +3,7 @@ import { Card } from './components/Card'
 import produtos from './constants/produtos.json'
 import { api } from "./api/rmApi"
 import style from './App.module.css'
+import { CardProduct } from './components/CardProducts'
 
 function App() {
   const [show, setShow] = useState("")
@@ -36,10 +37,10 @@ function App() {
      {show === "prod" &&
         <>
           <h2>Showroom de produtos</h2>
-            <div>
+            <div className={style.wrapPage}>
             {produtos.map((item) => {
               return(
-                <Card name={item.name} desc={item.desc} value={item.value} image={item.image} key={item.id}/>
+                <CardProduct name={item.name} desc={item.desc} value={item.value} image={item.image} key={item.id} status={item.Status}/>
               )
              })}
             </div>

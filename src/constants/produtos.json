@@ -4,13 +4,44 @@
     "name": "South Park Games",
     "desc": "South Park: Phone Destroyer",
     "value": "100.00",
-    "image": "../../src/assets/phone.jpg"
+    "image": "../../src/assets/phone.jpg",
+    "Categoria" : "Jogos",
+    "Status" : true
   },
   {
     "id": 2,
     "name": "South Park Games",
     "desc": "South Park: Snow Day",
-    "value": "2200.00",
-    "image": "../../src/assets/snow.avif"
+    "value": "200.00",
+    "image": "../../src/assets/snow.avif",
+    "Categoria" : "Jogos",
+    "Status" : true
+  },
+  {
+    "id": 3,
+    "name": "South Park Games",
+    "desc": "South Park: Chef's Luv Shack",
+    "value": "55.00",
+    "image": "../../src/assets/Shack.jpg",
+    "Categoria" : "Jogos",
+    "Status" : false
+  },
+  {
+    "id": 4,
+    "name": "South Park Games",
+    "desc": "South Park: Let's Go Tower Defense",
+    "value": "75.00",
+    "image": "../../src/assets/tower.jpg",
+    "Categoria" : "Jogos",
+    "Status" : true
+  },
+  {
+    "id": 5,
+    "name": "South Park Games",
+    "desc": "South Park: The Stick Of Truth",
+    "value": "150.00",
+    "image": "../../src/assets/SPTSOT.png",
+    "Categoria" : "Jogos",
+    "Status" : true
   }
 ]
