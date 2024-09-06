@@ -1,0 +1,11 @@
+.Alert
+{
+    width: 500px;
+    height: 50px;
+    background-color: rgba(57, 240, 57, 0.459);
+    color: rgb(10, 85, 10);
+    position: fixed;
+    text-align: center;
+    top: 130px;
+    left: 35%;
+}

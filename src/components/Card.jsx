@@ -1,11 +1,13 @@
 /* eslint-disable react/prop-types */
-export const Card = (props) => {
+export const CardAPI = ({name,status,species,type,gender,image}) => {
   return(
       <div>
-          <h1>{props.name}</h1>
-          <h2>{props.desc}</h2>
-          <p>{props.value}</p>
-          <img src={props.image} alt={props.name} width={150} height={"auto"}/>
+          <h1>{name}</h1>
+          <h2>{gender}</h2>
+          <p>{species}</p>
+          <img src={image} alt={name} width={150} height={"auto"}/>
+          <h3>{status}</h3>
+          <h4>{type}</h4>
       </div>
   )
 }
