@@ -28,7 +28,7 @@ return(
      />
      <Marker position={[-25.4249249,-49.2726446]}>
        <Popup>
-         <a href="https://maps.app.goo.gl/U28Prcqy66n75KTt6"> Senai/Sesi. <br /> Celso Charuri</a>
+         <a target='_blank' href="https://maps.app.goo.gl/U28Prcqy66n75KTt6"> Senai/Sesi. <br /> Celso Charuri</a>
         
        </Popup>
      </Marker>
