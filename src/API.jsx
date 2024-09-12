@@ -5,18 +5,16 @@ import { api } from "./api/rmApi"
 import { useState, useEffect } from 'react'
 import { CardAPI } from './components/CardAPI'
 import { Alert } from './components/Alert'
-import Draggable from "react-draggable";
 import { Tilt } from 'react-tilt'
-
-
+import { Modal } from './components/Modal'
 function API () {
 
 
   const defaultOptions = {
     reverse:        false,  // reverse the tilt direction
     max:            35,     // max tilt rotation (degrees)
-    perspective:    1000,   // Transform perspective, the lower the more extreme the tilt gets.
-    scale:          1.1,    // 2 = 200%, 1.5 = 150%, etc..
+    perspective:    5000,   // Transform perspective, the lower the more extreme the tilt gets.
+    scale:          1.005,    // 2 = 200%, 1.5 = 150%, etc..
     speed:          1000,   // Speed of the enter/exit transition
     transition:     true,   // Set a transition on enter/exit.
     axis:           null,   // What axis should be disabled. Can be X or Y.
@@ -28,6 +26,7 @@ function API () {
     const [page, setPage] = useState("")
     const [alert, setAlert] = useState(false)
     const [name, setName] = useState("")
+    const [modal, setModal] = useState();
 
     useEffect(() => {
         setAlert(false)
@@ -50,7 +49,7 @@ function API () {
 
 return(
 <>
-
+{modal !== undefined && <Modal data={data[modal]} close={() => setModal()}/>}
 <div className={style.wrapBtns}>
       <button><a href="/Products">Produtos</a></button>
       <button><a href="/API">API</a></button>
@@ -71,16 +70,17 @@ return(
                {alert ? <Alert/> : ""}
             </div>
             <div className={style.wrapPage}>
-            {data.map((item) => { 
+            {data.map((item, index) => { 
              return(
-               <Tilt options={defaultOptions} style={{ height: 250, width: 250 }}  key={item.id}>
-                      <Draggable>
+
+              
+
+
+               <Tilt options={defaultOptions} style={{ height: 450, width: 350, margin: 10}}  key={item.id}>
               <div >
                 <CardAPI name={item.name} species={item.species} gender={item.gender} image={item.image} status={item.status} type={item.type}/>
-                {/* <button onClick={() => {}}>Info</button> */}
+                <button onClick={() => setModal(index)}>Info</button>
               </div>
-
-              </Draggable>
                     </Tilt>
               )
            })}
