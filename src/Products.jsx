@@ -11,6 +11,7 @@ return(
       <button><a href="/Products">Produtos</a></button>
       <button><a href="/API">API</a></button>
       <button><a href="/Mapas">Mapa</a></button>
+      <button><a href="/Graficos">Graficos</a></button>
     </div>
     <div  className={style.wrapPage2}>
       <h1>Exercícios de manutenção</h1>

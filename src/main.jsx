@@ -9,6 +9,7 @@ import './index.css'
 import Mapas from './Mapas.jsx';
 import API from './API.jsx';
 import Products from './Products.jsx';
+import Graficos from './Graficos.jsx';
 
 const router = createBrowserRouter([
   {
@@ -27,6 +28,10 @@ const router = createBrowserRouter([
   {
     path: "/Mapas",
     element: <Mapas />,
+  },
+  {
+    path: "/Graficos",
+    element: <Graficos />,
   },
 ]);
 
