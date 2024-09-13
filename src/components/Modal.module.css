@@ -6,14 +6,16 @@
     transform: translate(-50%, -50%);
     width: auto;
     height: auto;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.897);
     display: flex;
     justify-content: center;
     align-items: center;
     z-index: 999;
+    color: black;
   }
   
   .modalContent {
+    color: black;
     background: white;
     padding: 20px;
     border-radius: 4px;

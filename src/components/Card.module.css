@@ -26,3 +26,13 @@
 .vermelho{
     background-color: red;
 }
+
+.cor2
+{
+  background-color : #858282;
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
